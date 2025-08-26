@@ -1,0 +1,232 @@
+<!DOCTYPE html> 
+<html laug="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <title>期末作業</title>
+    <style type="text/css">
+	ul{list-style:none;margin:0;padding:0;}
+	
+		ul.button li{
+				position:relative; width: 190px;
+				white-space:nowrap;
+				border-right:#aaacb0;
+		}
+		ul.button>li:last-child{
+				border-right:none;
+		}
+		ul.button>li{
+				float:left;
+				top:56px;
+		}
+		ul.button a{
+				  background-color:#D5D8DC;
+				  color:#1D0230;
+				  display:block;
+			      text-decoration:none;
+				  line-height:40px;
+				  padding:0px 10px;
+		}
+		ul.button a:hover{
+				background-color:#aaacb0;
+				color:#1D0230;
+		}
+		ul.button li:hover>a{
+				background-color:#aaacb0;
+				color:#1D0230;
+		}
+		ul.button ul{
+				position:absolute;
+				z-index:99;
+				top:83%;
+				min-width:180px;
+		}
+		ul.button ul li{
+			border-bottom:#aaacb0 1px solid;
+		}
+		ul.button ul li:last-child{
+			border-bottom:none;
+		}
+		ul.button ul ul{
+			z-index:999;
+			top:10px;
+			left:101%;
+		}
+		
+		
+		ul.button ul{
+			display:none;
+		}
+		ul.button li:hover>ul{
+			display:block;
+		}
+		
+		
+		h1 {margin-left:-3px;margin-top:-15px;font-size:2em;}
+        header { position:fixed; width: 100%; height: 15%;
+			top: 0px; left: 0px; background-color: #1D0230;}
+        article { position:fixed; width: 70%; height: 65%;
+			top: 24%; left: 0%; overflow: auto; background-color: #91849A;}
+        aside { position:fixed; width: 35%; height: 65%;
+			top: 24%; left: 70%; overflow:hidden;}
+        footer { position:fixed; width: 100%; height: 15%;
+				  top: 85%; left: 0px; background-color: #1D0230;}
+		#small_img{margin: 10px 5px; width: 100px;height: 80px;}
+		
+		.button{border:10; border-radius:10px;
+				  background-color:#D5D8DC;
+				  font-family:標楷體;font-size:1.4em;
+				  padding:15px;margin:20px;}
+		ol{
+			margin:0;padding:0;
+			position:absolute;top:30%;right:0.8%;
+			list-style-type:none;
+		}
+		#verysmall_img{margin:5px;width:30px;height:30px;}
+		
+		#photos{position:absolute;width:calc(600px*5);}
+		#imgRun{float:left;width:500px;}
+		.play{animation:move 16s ease-in-out infinite alternate;}
+		@keyframes move {
+		0%{margin-left:0px;}
+		20%{margin-left:0px;}
+		40%{margin-left:-500px;}
+		60%{margin-left:-1000px;}
+		80%{margin-left:-1500px;}
+		100%{margin-left:-2000px;}}
+
+    </style>
+</head>
+<body>
+    <header>
+	<h1><font color="#D5D8DC"><center><img src="HW4/aespa.jpg"></center></h1>
+	<ol>
+		<li><a href="https://www.youtube.com/channel/UC9GtSLeksfK4yuJ_g1lgQbg" target="_blank">
+		<img id="verysmall_img" src="image/youtube.png"></a>
+			<a href="https://twitter.com/aespa_official" target="_blank">
+		<img id="verysmall_img" src="image/twitter.jpg"></a>
+			<a href="https://zh.wikipedia.org/wiki/Aespa" target="_blank">
+		<img id="verysmall_img" src="image/icon.jpg"></a>
+		</li>
+	</ol>
+	</header>
+	<ul class="button">
+		<li class="button"><a href="#Savage MV"><font color="#1D0230;">Savage MV</font></a></li>
+		<li class="button"><a href="#介紹"><font color="#1D0230;">介紹▾<div class="arrow-down"></div></font></a>
+			<ul>
+			<li><a href="#">aespa</a></li>
+			<li><a href="#">團名由來</a></li>
+			<li><a href="#">粉絲名稱▸</a>
+				<ul>
+				<li><a href="#"><center>MY</center></a></li>
+				<li><a href="#"><center>my</center></a></li>
+				</ul>
+			</li>
+			<li><a href="#">問候語</a></li>
+			</ul>
+		</li>	
+		<li class="button"><a href="#成員介紹"><font color="#1D0230;">成員介紹▾</font></a>
+			<ul>
+			<li><a href="#">Karina</a></li>
+			<li><a href="#">Giselle</a></li>
+			<li><a href="#">Winter</a></li>
+			<li><a href="#">NingNing</a></li>
+			</ul>
+		</li>
+		<li class="button"><a href="#音樂作品"><font color="#1D0230;">音樂作品▾</font></a>
+			<ul>
+			<li><a href="#">迷你專輯</a></li>
+			<li><a href="#">數位單曲</a></li>
+			</ul>
+		</li>
+		
+		<li class="button"><a href="#演藝經歷"><font color="#1D0230;">演藝經歷</font></a></li>
+	</ul>
+    <article>
+	<th color="#483D8B"><marquee direction="down"><center><h1>『Be my æ』</th></h1></marquee></center>
+	<h2 id="Savage MV"><center><font color="#1D0230;">-Savage MV-</font></center></h2>
+	<center>
+	<video controls>
+		<source src="video/aespa Savage MV.mp4"type="video/mp4"></source>
+	</video></center>
+		<body><center>
+		<h2 id="介紹"><b>介紹<br></b></h2>
+		<font color="#1D0230;"><b>aespa（韓語：에스파）<br></b>
+		&emsp;由韓國SM娛樂旗下2020年所推出的女子組合，
+		是繼2016年的NCT之後，時隔四年推出偶像團體，也是繼2014年的Red Velvet後，
+		時隔六年再度推出女子團體。此團體由四名不同國籍成員組成，分別為兩位韓國籍成員Karina及Winter、
+		一位日本籍成員Giselle、一位中國籍成員Ningning，並由Karina擔任隊長，同時團體也擁有四名AI成員(æ)。
+		2020年11月17日，以單曲《Black Mamba》出道。<br>
+		<b>團名由來<br></b>
+		&emsp;&emsp;aespa（符號化為æspa）是由寓意『化身』（Avatar）及『經歷』（Experience）的首寫字母組成的
+		『ae』加上有『雙面』之意的『Aspect』結合，團體也將根據各種活動體現團體的主旨——『遇見另一個自我化身，體驗全新世界』。<br>
+
+		<b>粉絲名稱<br></b>
+		&emsp;&emsp;2020年11月17日，官方公開團體的粉絲名稱為MY。在虛擬角色所居住的Kwangya（曠野）中，MY寓意為『最珍貴的朋友』。<br>
+
+		<b>問候語<br></b>
+		&emsp;&emsp;問候語為『Be my æ』，在說出問候語的同時以右手的食指及中指由左眼劃至右眼，並在說『æ』的時候將手指打開呈現剪刀狀。<br> 
+		</font>
+		<h2 id="成員介紹">成員介紹</h2>
+		<font color="#1D0230;"><b>&hearts;Karina카리나劉知珉(隊長)</b><br>
+		2000年4月11日（21歲）<br>
+		代表色：藍色<br>
+		世界觀職務：火箭拳擊手<br>
+		<b>&#9770;Giselle지젤内永枝利</b><br>
+		2000年10月30日（21歲）<br>
+		代表色：粉色<br>
+		世界觀職務：特殊語言家<br>
+		<b>&#9733;Winter윈터金旼炡</b><br>
+		2001年1月1日（20歲）<br>
+		代表色：白色<br>
+		世界觀職務：武器裝備兵<br>
+		<b>ʚΐɞNingNing닝닝寧藝卓</b><br>
+		2002年10月23日（19歲）<br>
+		代表色：紫色<br>
+		世界觀職務：數位駭客<br>
+		</font>
+		<h2 id="音樂作品">音樂作品</h2>
+		<font color="#1D0230;"><b>迷你專輯</b><br>
+		2021年10月5日：《Savage》<br>
+		<b>數位單曲</b><br>
+		2020年11月17日：《Black Mamba》<br>
+		2021年2月5日：《Forever》<br>
+		2021年5月17日：《Next Level》<br>
+		</font>
+		<h2 id="演藝經歷">演藝經歷</h2>
+		<font color="#1D0230;">2016年-2019年：出道前<br>
+在團體正式出道前，寧寧率先於2016年透過SM ROOKIES企劃亮相，其也是團體中唯一先行亮相的成員。而成員Karina則在2019年以伴舞的身份登場於泰民迷你二輯主打歌《Want》的MV中，並短暫於各大音樂節目表演。<br>
+
+2020年：出道、發行首張數位單曲<br>
+2020年10月26日，SM娛樂於各社交帳號公開與之相關的社交媒體。27日，SM娛樂透過官方網站及各社交媒體公佈第一名成員Winter的預告照片，該成員兼具歌唱和舞蹈實力。28日，SM娛樂公佈第二名成員Karina的預告照片，該成員兼具歌唱、饒舌及舞蹈魅力。同日，團體YouTube頻道發布預告影片，介紹特別的世界觀以及與成員Karina相對應的虛擬角色——ae-Karina。29日，SM娛樂公佈第三名成員寧寧的預告照片，該成員具有出色歌唱能力。30日，SM娛樂公佈第四名成員Giselle的預告照片，該成員具有扎實說唱功力，並且能說一口流利的韓語、日語和英語。<br>
+
+11月2日，透過團體YouTube頻道發布世界觀的片段。團體YouTube頻道分別在3日、6日、9日及11日發布成員Winter、Giselle、寧寧及Karina的個人預告影片並介紹與各成員間相對應的虛擬角色。<br>
+
+11月17日，以首張單曲《Black Mamba》發行出道，MV在YouTube公開24小時內觀看次數便已突破2140萬，創下韓國團體出道MV首日最高觀看次數的新紀錄。11月20日，在KBS2《音樂銀行》以數位單曲《Black Mamba》首次參與音樂節目。<br>
+
+2021年：MV破億、新人賞、初一位、第二、三張數位單曲、迷你一輯<br>
+2021年1月8日，出道單曲《Black Mamba》MV歷經52天觀看次數突破一億，成為aespa首支破億MV，創下出道MV用時最快達到一億觀看次數的新紀錄。1月13日，獲得Gaon Chart Music Awards音源部門年度新人獎。1月17日，以《Black Mamba》在SBS《人氣歌謠》獲得出道以來首個音樂節目一位。<br>
+
+2月5日，發行第二張單曲《Forever》。<br>
+
+5月17日，發行第三張單曲《Next Level》。6月19日，單曲《Next Level》MV歷經33天觀看次數突破一億，成為aespa第二支破億MV。6月21日，《Next Level》在Melon 24Hits排行榜上奪得24小時累計收聽量的第一名，是在Melon排行榜改版後發行的女團音源首次登上24Hits排行榜榜首。<br>
+
+10月5日，發行首張迷你專輯《Savage》。aespa憑藉首張專輯《Savage》進入「Billboard 200」第20名。10月20日，專輯《Savage》在發行15天之內突破50萬張的銷量紀錄。10月23日，主打歌《Savage》MV歷經18天觀看次數突破一億，成為aespa第三支破億MV。<br>
+	</font>
+	</body></center>
+	</article>
+    <aside>
+	<div id="photos"class="play">
+	<img id="imgRun"src="image/A001.jpg">
+	<img id="imgRun"src="image/A002.jpg">
+	<img id="imgRun"src="image/A003.jpg">
+	<img id="imgRun"src="image/A004.jpg">
+	<img id="imgRun"src="image/A005.jpg">
+	</div>
+	</aside>
+    <footer>
+        <img id="small_img"src="HW4/A004.jpg"><img id="small_img" src="HW4/A006.jpg"><img id="small_img" src="HW4/A003.jpg"><img id="small_img" src="HW4/A005.jpg"><img id="small_img" src="HW4/A007.jpg">
+        <a href="https://www.youtube.com/watch?v=ZeerrnuLi5E" target="_blank"><img id="small_img" src="HW4/A002.jpg"><font color="#D5D8DC">aespa Black Mamba MV</font></a>
+		<audio src="audio/aespa Black Mamba MV.mp3" controls type="audio/mp3"></audio>
+    </footer>
+</body>
+</html>
