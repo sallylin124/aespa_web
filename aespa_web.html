@@ -94,7 +94,46 @@
 		60%{margin-left:-1000px;}
 		80%{margin-left:-1500px;}
 		100%{margin-left:-2000px;}}
-
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        /* 自訂 CSS 樣式來增強表格視覺效果 */
+        .table-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #f8f8f8;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 1.25rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #4B0082; /* 選擇一個與 aespa 概念相關的深紫色 */
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e2e8f0;
+        }
+        /* 設定 tbody 的第一欄為粗體，以強調成員名稱 */
+        tbody tr td:first-child {
+            font-weight: 600;
+            color: #1a202c;
+        }
     </style>
 </head>
 <body>
@@ -161,7 +200,8 @@
 	<center>
 	
 	<video src="video/aespa Savage MV.mp4" controls type="video/mp4"></video>
-	
+	<div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/kQJeWR-1CBo?si=FoJwGVWgwus_t9NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 	</center>
 	<body>
 		<center>
@@ -202,6 +242,109 @@
 		代表色：紫色<br>
 		世界觀職務：數位駭客<br>
 		</font>
+		<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>姓名 (Name)</th>
+                <th>生日 (Birth Date)</th>
+                <th>代表色 (Color)</th>
+                <th>世界觀職務 (Worldview Role)</th>
+				<th>世界觀職務 (Worldview Role)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Karina카리나 劉知珉 (隊長)♥</td>
+                <td>2000年4月11日</td>
+                <td style="color: blue;">藍色</td>
+                <td>火箭拳擊手</td>
+				<td>火箭拳擊手</td>
+            </tr>
+            <tr>
+                <td>Giselle지젤 内永枝利☪</td>
+                <td>2000年10月30日</td>
+                <td style="color: pink;">粉色</td>
+                <td>特殊語言家</td>
+				<td>火箭拳擊手</td>
+            </tr>
+            <tr>
+                <td>Winter윈터 金旼炡★</td>
+                <td>2001年1月1日</td>
+                <td style="color: white; background-color: #333;">白色</td>
+                <td>武器裝備兵</td>
+				<td>火箭拳擊手</td>
+            </tr>
+            <tr>
+                <td>NingNing닝닝 寧藝卓ʚΐɞ</td>
+                <td>2002年10月23日</td>
+                <td style="color: purple;">紫色</td>
+                <td>數位駭客</td>
+				<td>火箭拳擊手</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        		<!-- 單選按鈕 (Radio Buttons) -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">選擇你最喜歡的成員 (單選)</h2>
+            <form class="flex flex-col space-y-4">
+                <!-- 每個 <input type="radio"> 必須有相同的 name 才能實現同一組的單選題目 -->
+                <!-- <label> 標籤的 for 屬性與 <input> 的 id 相連結，以增加可用性 -->
+                <div class="flex items-center">
+                    <input type="radio" id="karina" name="favorite_member1" value="karina" class="mr-2">
+                    <label for="karina" class="text-gray-600">Karina</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="radio" id="giselle" name="favorite_member1" value="giselle" class="mr-2">
+                    <label for="giselle" class="text-gray-600">Giselle</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="radio" id="winter" name="favorite_member2" value="winter" class="mr-2">
+                    <label for="winter" class="text-gray-600">Winter</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="radio" id="ningning" name="favorite_member2" value="ningning" class="mr-2">
+                    <label for="ningning" class="text-gray-600">NingNing</label>
+                </div>
+            </form>
+        </div>
+		        <!-- 多選按鈕 (Checkboxes) -->
+        <div>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">選擇你最喜歡的音樂作品 (多選)</h2>
+            <form class="flex flex-col space-y-4">
+                <!-- 每個 <input type="checkbox"> 都可以獨立選擇 -->
+                <div class="flex items-center">
+                    <input type="checkbox" id="black-mamba" name="favorite_songs" value="black-mamba" class="mr-2">
+                    <label for="black-mamba" class="text-gray-600">Black Mamba</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="next-level" name="favorite_songs" value="next-level" class="mr-2">
+                    <label for="next-level" class="text-gray-600">Next Level</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="savage" name="favorite_songs" value="savage" class="mr-2">
+                    <label for="savage" class="text-gray-600">Savage</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="spicy" name="favorite_songs" value="spicy" class="mr-2">
+                    <label for="spicy" class="text-gray-600">Spicy</label>
+                </div>
+            </form>
+        </div>
+    <!-- 新增的檔案上傳區塊 -->
+    <div class="bg-white p-8 rounded-2xl shadow-lg mb-12">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">上傳圖片</h2>
+        <p class="text-gray-600 mb-4">點擊下方按鈕以選擇圖片檔案：</p>
+        <form id="uploadForm">
+            <label for="file-upload" class="cursor-pointer bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out">
+                選擇圖片
+            </label>
+            <!-- 隱藏實際的 input 元素，讓 label 充當視覺上的按鈕 -->
+            <input id="file-upload" type="file" class="hidden" accept="image/*">
+            <span id="file-name" class="ml-4 text-gray-700">尚未選擇檔案</span>
+        </form>
+    </div>
 		<h2 id="音樂作品">音樂作品</h2>
 		<font color="#1D0230;"><b>迷你專輯</b><br>
 		2021年10月5日：《Savage》<br>
@@ -230,6 +373,23 @@
 
 10月5日，發行首張迷你專輯《Savage》。aespa憑藉首張專輯《Savage》進入「Billboard 200」第20名。10月20日，專輯《Savage》在發行15天之內突破50萬張的銷量紀錄。10月23日，主打歌《Savage》MV歷經18天觀看次數突破一億，成為aespa第三支破億MV。<br>
 	</font>
+	<script>
+    // 獲取 input 元素和顯示檔名的 span 元素
+    const fileInput = document.getElementById('file-upload');
+    const fileNameDisplay = document.getElementById('file-name');
+
+    // 監聽 input 元素的 change 事件
+    fileInput.addEventListener('change', () => {
+        // 如果有選擇檔案
+        if (fileInput.files.length > 0) {
+            // 顯示選擇的檔案名稱
+            fileNameDisplay.textContent = fileInput.files[0].name;
+        } else {
+            // 如果沒有選擇檔案，則重設顯示
+            fileNameDisplay.textContent = '尚未選擇檔案';
+        }
+    });
+</script>
 	</body></center>
 	</article>
 	<!-- 右側跑馬燈區塊 -->
@@ -248,5 +408,6 @@
         <a href="https://www.youtube.com/watch?v=ZeerrnuLi5E" target="_blank"><img id="small_img" src="HW4/A002.jpg"><font color="#D5D8DC">aespa Black Mamba MV</font></a>
 		<audio src="audio/aespa Black Mamba MV.mp3" controls type="audio/mp3"></audio>
     </footer>
+
 </body>
 </html>
