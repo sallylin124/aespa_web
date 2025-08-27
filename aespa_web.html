@@ -2,7 +2,8 @@
 <html laug="zh-tw">
 <head>
     <meta charset="utf-8">
-    <title>期末作業</title>
+    <title>aespa_web</title> 
+	<!-- 網頁標題 -->
     <style type="text/css">
 	ul{list-style:none;margin:0;padding:0;}
 	
@@ -97,11 +98,17 @@
     </style>
 </head>
 <body>
+	<!-- 頂部固定區塊 -->
     <header>
 	<h1><font color="#D5D8DC"><center><img src="HW4/aespa.jpg"></center></h1>
+		<!-- font用來設定字體、大小和顏色 -->
 	<ol>
+		<!-- ol = 有序列表 -->
 		<li><a href="https://www.youtube.com/channel/UC9GtSLeksfK4yuJ_g1lgQbg" target="_blank">
-		<img id="verysmall_img" src="image/youtube.png"></a>
+		<img id="verysmall_img" src="image/youtube.png"></a> 
+					<!-- 超連結href+圖片和影片src  -->
+					<!-- target="_blank"讓連結在新視窗中打開 -->
+					 <!-- id = CSS：使用 # 符號設定 -->
 			<a href="https://twitter.com/aespa_official" target="_blank">
 		<img id="verysmall_img" src="image/twitter.jpg"></a>
 			<a href="https://zh.wikipedia.org/wiki/Aespa" target="_blank">
@@ -109,11 +116,16 @@
 		</li>
 	</ol>
 	</header>
+	<!-- id (獨一無二的身份證), class (可重複使用的標籤) -->
+	<!-- 導覽列 -->
 	<ul class="button">
+		<!-- class = CSS：使用 . 符號設定 -->
 		<li class="button"><a href="#Savage MV"><font color="#1D0230;">Savage MV</font></a></li>
+		                      <!-- 連結# ,呼叫id -->
 		<li class="button"><a href="#介紹"><font color="#1D0230;">介紹▾<div class="arrow-down"></div></font></a>
+																		<!-- 區塊下拉式選單 -->
 			<ul>
-			<li><a href="#">aespa</a></li>
+			<li><a href="#aespa">aespa</a></li>
 			<li><a href="#">團名由來</a></li>
 			<li><a href="#">粉絲名稱▸</a>
 				<ul>
@@ -141,16 +153,22 @@
 		
 		<li class="button"><a href="#演藝經歷"><font color="#1D0230;">演藝經歷</font></a></li>
 	</ul>
+	<!-- 內容區塊 -->
     <article>
 	<th color="#483D8B"><marquee direction="down"><center><h1>『Be my æ』</th></h1></marquee></center>
+					<!-- marquee: 用來讓文字從上往下滾動 -->
 	<h2 id="Savage MV"><center><font color="#1D0230;">-Savage MV-</font></center></h2>
 	<center>
-	<video controls>
-		<source src="video/aespa Savage MV.mp4"type="video/mp4"></source>
-	</video></center>
-		<body><center>
+	
+	<video src="video/aespa Savage MV.mp4" controls type="video/mp4"></video>
+	
+	</center>
+	<body>
+		<center>
 		<h2 id="介紹"><b>介紹<br></b></h2>
-		<font color="#1D0230;"><b>aespa（韓語：에스파）<br></b>
+		<h2 id="aespa"><center><font color="#1D0230;"><b>aespa（韓語：에스파）</b></font></center></h2>
+		<!-- <b>aespa（韓語：에스파）<br></b> -->
+		<font color="#1D0230;">
 		&emsp;由韓國SM娛樂旗下2020年所推出的女子組合，
 		是繼2016年的NCT之後，時隔四年推出偶像團體，也是繼2014年的Red Velvet後，
 		時隔六年再度推出女子團體。此團體由四名不同國籍成員組成，分別為兩位韓國籍成員Karina及Winter、
@@ -214,6 +232,7 @@
 	</font>
 	</body></center>
 	</article>
+	<!-- 右側跑馬燈區塊 -->
     <aside>
 	<div id="photos"class="play">
 	<img id="imgRun"src="image/A001.jpg">
@@ -223,6 +242,7 @@
 	<img id="imgRun"src="image/A005.jpg">
 	</div>
 	</aside>
+	<!-- 底部固定區塊 -->
     <footer>
         <img id="small_img"src="HW4/A004.jpg"><img id="small_img" src="HW4/A006.jpg"><img id="small_img" src="HW4/A003.jpg"><img id="small_img" src="HW4/A005.jpg"><img id="small_img" src="HW4/A007.jpg">
         <a href="https://www.youtube.com/watch?v=ZeerrnuLi5E" target="_blank"><img id="small_img" src="HW4/A002.jpg"><font color="#D5D8DC">aespa Black Mamba MV</font></a>
